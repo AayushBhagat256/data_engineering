@@ -47,3 +47,9 @@ Start Consumer:
 Duplicate the session & enter in a new console --
 cd kafka_2.13-3.9.0
 bin/kafka-console-consumer.sh --topic demo-testing1 --bootstrap-server PUBLIC_IP:9092
+
+
+--------------------------------------------------------------------------------------------
+working with crawler
+--------------------------
+https://chatgpt.com/share/673db772-d750-8002-a2c9-32486ae207cf
