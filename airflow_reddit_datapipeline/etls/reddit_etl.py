@@ -24,12 +24,13 @@ def extract_posts(reddit_instance:Reddit, subreddit:str, time_filter:str, limit:
     subreddit = reddit_instance.subreddit(subreddit)
     posts = subreddit.top(time_filter=time_filter, limit=limit) #here variable and param is of same name in posts we used the variable one
     
-    # post_lists = []
+    post_lists = []
     
-    print(posts)
+    # print(posts)
     
-    # for post in posts:
-    #     post_dict = vars(post)
+    for post in posts:
+        post_dict = vars(post)
+        print(post_dict)
     #     post = {key : post_dict[key] for key in POST_FIELDS}
     #     post_lists.append(post)
     # return post_lists
