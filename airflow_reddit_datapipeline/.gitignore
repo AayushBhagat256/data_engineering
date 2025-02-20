@@ -2,3 +2,5 @@
 .idea
 airflow.env
 logs
+
+config/config.conf
