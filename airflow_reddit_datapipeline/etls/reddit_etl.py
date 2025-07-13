@@ -6,6 +6,10 @@ import pandas as pd
 from praw import Reddit
 import praw
 
+from utils.constants import POST_FIELDS
+
+
+
 
 def connect_reddit(client_id,client_secret,user_agent) -> Reddit:
     try:
@@ -30,8 +34,11 @@ def extract_posts(reddit_instance:Reddit, subreddit:str, time_filter:str, limit:
     
     for post in posts:
         post_dict = vars(post)
-        print(post_dict)
-    #     post = {key : post_dict[key] for key in POST_FIELDS}
-    #     post_lists.append(post)
-    # return post_lists
+        # print(post_dict)
+        # continue with post fields
+        post = {key : post_dict[key] for key in POST_FIELDS}
+        post_lists.append(post)
+    print(post_lists)
+    return post_lists
+
         

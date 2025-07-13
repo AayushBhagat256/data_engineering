@@ -4,6 +4,8 @@ from utils.constants import SECRET
 from etls.reddit_etl import connect_reddit
 from etls.reddit_etl import extract_posts
 
+import pandas as pd
+
 def reddit_pipeline(filename:str,subreddit:str,time_filter='day',limit=None):
     # returning a particular instance of reddit here
     #1. connecting to reddit instance
@@ -13,5 +15,7 @@ def reddit_pipeline(filename:str,subreddit:str,time_filter='day',limit=None):
     
     #2. extraction
     posts = extract_posts(instance,subreddit,time_filter,limit)
+    post_df = pd.DataFrame(posts)
+    
     #3. transformation
     #4. loading to csv
