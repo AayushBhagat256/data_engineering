@@ -20,15 +20,19 @@ To understand more about docker and the entire setup, [click here](https://chatg
 7. **Amazon Redshift**: Data warehousing and analytics.
 
 # Code Flow : 
-
+## Part 1: Reddit Post Extraction and ETL
 1. `/dags/reddit_dags.py` -> setup and #1. Extraction for reddit #2. Upload to S3 (later part)
 2. from pipelines.reddit_pipeline import reddit_pipeline to the `/dags/reddit_dags.py` from `/pipelines/reddit_pipelines.py`
 3. from etls.reddit_etl import connect_reddit to the `/pipelines/reddit_pipelines` from `/etls/reddit_etls.py`
 4. We have a function in reddit_pipeline.py named as connect reddit, extract post which we are importing from reddit_etl.py
-5. 
-6. 
+5. After Extracting Post now we move to DataTransformations part - > reddit_etl.py -> transform data and load_data_to_csv
+6. calling the above 2 transform and load functions into the reddit_pipeline.py and specifying path for CSV in the data/output directory 
+
+## Part 2: AWS
 7. 
 8. 
+9. 
+
 
 
 # Commands 

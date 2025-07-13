@@ -1,0 +1,55 @@
+id,title,selftext,score,num_comments,author,created_utc,url,upvote_ratio,over_18,edited,spoiler,stickied
+1lyav6g,Do I have a good job?,"So I am in my first DE job, been here for a year, working for a company who hasn't had someone whose title was DE before. There were lots of people doing small scale data engineering type tasks using a variety of no-code tools, but no one was writing custom pipelines or working with a data warehouse. I basically set up our snowflake database, ETL pipelines, and a few high impact dashboards. The situation was such that even as a relative beginner there was low-hanging fruit where I could make a big impact.
+
+When I was getting hired, it seemed like they were taking a chance on me as an individual but also 'data engineering' as a concept, they didn't really know if they 'needed it'. I think partly because of this, and partly because I was just out of school, my compensation is pretty low for a DE at 72k (living in a US city but not a major coastal city).
+
+But, there are good benefits, I haven't needed to work more than 40 hours more than two or three times, and I feel like the work is interesting. I'm also able to learn on the job because I'm pretty much defining/inventing the tech stack as I go. There is a source of tension though where it feels like no one really understands when I do something innovative or creative to solve a problem, and because of that sometimes it feels like timelines/expectations are expressed with no knowledge of what goes into my work which can be a little frustrating. But, to be fair nothing ever really happens when a timeline is missed.
+
+My hunch is that if I asked for a raise it would be denied since they seem to be under the impression anyone with a basic data engineering related education could take my place. IMO, if someone tried to take my place there would be a months-long learning process about the business and all the data relationships before they could support existing work let alone produce more.
+
+Anyway, just curious if this seems like I'm hoping for too much? I'm happy overall, but don't know if I am just being naive and should be getting more in terms of recognition, money, opportunities to advance. What are other people's work experiences like? I have a feeling people make more than me by a lot but I don't know if that comes with more stress too.
+
+  
+TLDR: I'm getting paid 72k with, working 40 hours a week, good benefits, not a ton of stress, 1 year of full time DE experience, should I be looking for more?",13,15,Advanced-Average-514,2025-07-12 20:54:20,https://www.reddit.com/r/dataengineering/comments/1lyav6g/do_i_have_a_good_job/,0.85,False,False,False,False
+1ly7vu0,Real-World Data Modeling Practice Questions,"Anyone know a good place to practice real world data modeling questions? I am not looking for theory rather more practical and real world allinged.. Something like this
+
+https://preview.redd.it/n6liso63ohcf1.png?width=871&format=png&auto=webp&s=92f070cd149e99cf01e51b9323fb69382fa61e48
+
+",10,3,rockingpj,2025-07-12 18:46:04,https://www.reddit.com/r/dataengineering/comments/1ly7vu0/realworld_data_modeling_practice_questions/,0.87,False,False,False,False
+1ly3qji,BQ datastream and a poor merge strategy?,"I have set up a BQ datastream from AWS Aurora, initially was on a MERGE strategy, but then after couple of months the bill increased a lot, ended up being the merge queries that the stream implicitly was doing. 
+
+After evaluating I decided to move it to APPEND-ONLY, and do the ETL myself, I started with DBT a custom merge strategy accounting for UPSERT and DELETE from source, to realize that this operations as per bq do a full scan table unless partitioned, here comes the catch, I guess we all have a user table where majority of the users trace interactions, well, I set up a partition for registered date naively thinking that perhaps a portion of users would be active, sadly no, all the users from 90% of the partitions had upstream changes causing full table scans, which I assume, this is what the automated MERGE strategy was doing at the beginning. What you guys suggest doing? If I decide doing full CDC with a different architecture such as streaming, will bq have the same cost for doing full table scans trying to find the updated record? Is it bq just bad at this given its date-partition structure? Any suggestion to this one man de team
+
+",2,3,josejo9423,2025-07-12 15:51:49,https://www.reddit.com/r/dataengineering/comments/1ly3qji/bq_datastream_and_a_poor_merge_strategy/,0.67,False,False,False,False
+1lybol9,"In Azure databricks, can you query a datalake storage gen2 table in a SQL notebook?",I'm assuming you can't since ADLS is NoSQL and I can't find anything on Google but I wanted to double check with the community before I write it off as an option.,5,8,IG-55,2025-07-12 21:30:48,https://www.reddit.com/r/dataengineering/comments/1lybol9/in_azure_databricks_can_you_query_a_datalake/,0.73,False,False,False,False
+1lysasf,Learn the Fundamentals of Data Engineering in Roblox!,"Ready to conquer data engineering fundamentals while having fun? 🎉
+
+How it works:
+
+* **Pre-Test Survey** (complete before you play) 
+   * Take the pre-test: [https://forms.gle/o9Dr7rBSUFEg5DfG7](https://forms.gle/o9Dr7rBSUFEg5DfG7)
+* **Play the Game** 
+   * Dive into our 30-minute, gamified learning experience on Roblox—link unlocked once you finish the pre-test!
+* **Post-Test Survey** (help us improve) 
+   * Share your feedback: [https://forms.gle/4V4s56CfdeGehKJm9](https://forms.gle/4V4s56CfdeGehKJm9)
+
+Ready to level up? Let’s get started!",8,0,Sad-Ant-1434,2025-07-13 13:02:59,https://i.redd.it/jl1c2cnv2ncf1.jpeg,0.75,False,False,False,False
+1ly796a,What does a typical day look like for a data engineer working mostly in Apache Hive?,"Hi all,
+
+I’m interested in hearing from data engineers who spend most of their time in Apache Hive (or other SQL-on-Hadoop tools).
+
+
+
+• How does your day usually flow (stand-ups, coding time, firefighting, meetings)?  
+
+• Roughly what % of your time is ad-hoc querying vs. building or maintaining batch pipelines?  
+
+• What tools do you open first thing in the morning (Hue, VS Code, notebooks, etc.)?  
+
+• Biggest pain points with Hive or Hadoop today?  
+
+• Anything you wish you’d known before taking a Hive-heavy role?
+
+
+
+Thanks in advance for sharing your experience!",0,3,lolhumourme,2025-07-12 18:19:32,https://www.reddit.com/r/dataengineering/comments/1ly796a/what_does_a_typical_day_look_like_for_a_data/,0.4,False,False,False,False

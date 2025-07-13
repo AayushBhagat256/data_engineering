@@ -1,4 +1,4 @@
-{
+[{
     "title": "Is the Social Security Debacle as Simple as the \"Doge Kids\" Not Understanding What COBOL Is?",
     "author": "u/ColeRoolz",
     "subreddit": "r/dataengineering",
@@ -15,8 +15,7 @@
     "nsfw": false,
     "subreddit_subscribers": 258023,
     "created_utc": 1740023372
-  }
-
+  },
   {
   "comment_limit": 2048,
   "comment_sort": "confidence",
@@ -176,5 +175,5 @@
   "_fetched": false,
   "_additional_fetch_params": {},
   "_comments_by_id": {}
-}
+}]
   
