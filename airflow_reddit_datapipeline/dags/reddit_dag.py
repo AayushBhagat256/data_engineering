@@ -48,3 +48,11 @@ extract = PythonOperator(
     dag = dag
 )
 #2. Upload to S3
+
+# upload_s3 = PythonOperator(
+#     task_id = 's3Upload',
+#     python_callable= upload_s3_pipeline,
+#     dag = dag
+# )
+
+# extract 

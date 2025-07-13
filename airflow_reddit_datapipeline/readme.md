@@ -1,4 +1,5 @@
 `docker compose up -d --build `
+`docker stop $(docker ps -q)` to stop docker container (pause)
 <br>
 Error : failed to solve: image "docker.io/library/custom-airflow:2.7.1-python3.9": already exists
 # To fix the error : 
