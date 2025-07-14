@@ -4,5 +4,6 @@ airflow.env
 logs
 
 config/config.conf
-
+confidnetial.txt
 projectguy1_accessKeys.csv
+projectguy1_credentials.csv

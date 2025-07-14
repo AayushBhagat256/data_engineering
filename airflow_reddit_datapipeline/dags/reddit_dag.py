@@ -14,6 +14,7 @@ Before: ['C:\\Users\\Aayush Bhagat\\Desktop\\data_engineering\\airflow_reddit_da
 After:  ['C:\\Users\\Aayush Bhagat\\Desktop\\data_engineering\\airflow_reddit_datapipeline',..,..]
 """
 
+from pipelines.aws_s3_pipeline import upload_s3_pipeline
 from pipelines.reddit_pipeline import reddit_pipeline
 
 
@@ -49,10 +50,10 @@ extract = PythonOperator(
 )
 #2. Upload to S3
 
-# upload_s3 = PythonOperator(
-#     task_id = 's3Upload',
-#     python_callable= upload_s3_pipeline,
-#     dag = dag
-# )
+upload_s3 = PythonOperator(
+    task_id = 's3Upload',
+    python_callable= upload_s3_pipeline,
+    dag = dag
+)
 
-# extract 
+extract >> upload_s3
